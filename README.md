@@ -61,6 +61,7 @@ npx cap sync
 - hideLauncher
 - displayInAppMessages
 - hideInAppMessages
+- displayCarousel
 - setUserHash
 - setBottomPadding
 
