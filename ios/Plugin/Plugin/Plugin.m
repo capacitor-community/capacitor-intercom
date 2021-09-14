@@ -17,6 +17,7 @@ CAP_PLUGIN(IntercomPlugin, "IntercomPlugin",
            CAP_PLUGIN_METHOD(hideLauncher, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(displayInAppMessages, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(hideInAppMessages, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(displayCarousel, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(setUserHash, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(setBottomPadding, CAPPluginReturnPromise);
 )

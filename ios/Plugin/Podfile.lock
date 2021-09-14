@@ -6,15 +6,26 @@ PODS:
   - GCDWebServer (3.4.2):
     - GCDWebServer/Core (= 3.4.2)
   - GCDWebServer/Core (3.4.2)
+  - Intercom (9.3.3)
 
 DEPENDENCIES:
   - Capacitor
+  - Intercom
+  - Intercom (~> 9)
+
+SPEC REPOS:
+  trunk:
+    - Capacitor
+    - CapacitorCordova
+    - GCDWebServer
+    - Intercom
 
 SPEC CHECKSUMS:
   Capacitor: 36a275e2fd85b69a2cb9633e8920ecf5c5aab88d
   CapacitorCordova: cf26a9b075eb1f339118c920a975e4ff9e403193
   GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
+  Intercom: 37ca86a8990360ed5d206a5ebae7c5a7168f36d4
 
-PODFILE CHECKSUM: 57e6d463d83fe9e2081ca17be52456b12c5e148c
+PODFILE CHECKSUM: 5ed5a852e2651d374c194ba737ed9f662fc04409
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.9.3

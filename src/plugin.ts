@@ -59,6 +59,10 @@ export class Intercom implements IntercomProtocol {
     return IntercomPlugin.hideInAppMessages();
   }
 
+  displayCarousel(options: { carouselId: string }): Promise<void> {
+    return IntercomPlugin.displayCarousel(options);
+  }
+
   setUserHash(options: { hmac: string }): Promise<void> {
     return IntercomPlugin.setUserHash(options);
   }

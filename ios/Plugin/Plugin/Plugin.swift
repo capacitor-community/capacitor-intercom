@@ -139,6 +139,15 @@ public class IntercomPlugin: CAPPlugin {
     call.success()
   }
     
+  @objc func displayCarousel(_ call: CAPPluginCall) {  
+    if let carouselId = call.getString("carouselId") {
+        Intercom.presentCarousel(carouselId)
+        call.success()
+    }else{
+      call.error("carouselId not provided to displayCarousel.")
+    }
+  }
+    
   @objc func setUserHash(_ call: CAPPluginCall) {
     let hmac = call.getString("hmac")
     

@@ -21,6 +21,7 @@ export interface IntercomProtocol {
   hideLauncher(): Promise<void>;
   displayInAppMessages(): Promise<void>;
   hideInAppMessages(): Promise<void>;
+  displayCarousel(options: { carouselId: string }): Promise<void>;
   setUserHash(options: { hmac: string }): Promise<void>;
   setBottomPadding(options: { value: string }): Promise<void>;
 }
