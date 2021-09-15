@@ -120,7 +120,8 @@ public class IntercomPlugin extends Plugin {
 
     @PluginMethod()
     public void displayMessageComposer(PluginCall call) {
-        Intercom.client().displayMessageComposer();
+        String message = call.getString("message");
+        Intercom.client().displayMessageComposer(message);
         call.success();
     }
 
