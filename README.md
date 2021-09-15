@@ -90,13 +90,13 @@ intercom
 //
 // Display the message composer
 intercom
-  .displayMessageComposer({ message: "Hello there!" } })
+  .displayMessageComposer({ message: "Hello there!" })
 
 //
 // Identity Verification
 // https://developers.intercom.com/installing-intercom/docs/ios-identity-verification
 intercom
-  .setUserHash({ hmac: "xyz" } })
+  .setUserHash({ hmac: "xyz" })
 ```
 
 ## iOS setup
