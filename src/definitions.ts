@@ -1,4 +1,9 @@
 export interface IntercomPlugin {
+  loadWithKeys(options: {
+    appId?: string;
+    apiKeyIOS?: string;
+    apiKeyAndroid?: string;
+  }): Promise<void>;
   registerIdentifiedUser(options: {
     userId?: string;
     email?: string;
@@ -20,6 +25,7 @@ export interface IntercomPlugin {
   setBottomPadding(options: { value: string }): Promise<void>;
   sendPushTokenToIntercom(options: { value: string }): Promise<void>;
   receivePush(notification: IntercomPushNotificationData): Promise<void>;
+  displayArticle(options: { articleId: string; }): Promise<void>;
 }
 
 export interface IntercomPushNotificationData {
@@ -45,5 +51,5 @@ export interface IntercomUserUpdateOptions {
   name?: string;
   phone?: string;
   languageOverride?: string;
-  customAttributes: { [key: string]: any };
+  customAttributes?: { [key: string]: any };
 }

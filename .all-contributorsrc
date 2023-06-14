@@ -94,6 +94,79 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "ramikhafagi96",
+      "name": "Rami Khafagi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38646828?v=4",
+      "profile": "https://github.com/ramikhafagi96",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "rdlabo",
+      "name": "Masahiko Sakakibara",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9690024?v=4",
+      "profile": "https://rdlabo.jp/",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "camdjn",
+      "name": "Dejardin Camille",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7116085?v=4",
+      "profile": "https://github.com/camdjn",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "scr2em",
+      "name": "Mohamed Abdelgwad",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4671486?v=4",
+      "profile": "https://scr2em.github.io/portfolio/",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "shark404",
+      "name": "Nathan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4898049?v=4",
+      "profile": "https://github.com/shark404",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "cwoebker",
+      "name": "Cecil Wöbker",
+      "avatar_url": "https://avatars.githubusercontent.com/u/885085?v=4",
+      "profile": "https://cwoebker.com/",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "pavloPyrig0",
+      "name": "Pavlo Pyrig",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10965335?v=4",
+      "profile": "https://github.com/pavloPyrig0",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "dupiesdupreez",
+      "name": "Ruan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6910085?v=4",
+      "profile": "https://github.com/dupiesdupreez",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
