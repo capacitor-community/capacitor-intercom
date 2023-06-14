@@ -1,6 +1,6 @@
 {
   "name": "@capacitor-community/intercom",
-  "version": "4.0.0-0",
+  "version": "5.0.0",
   "description": "Enable Intercom features for Capacitor apps",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -20,6 +20,8 @@
     "docgen": "docgen --api IntercomPlugin --output-readme README.md --output-json dist/docs.json",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
+    "all-contributors": "all-contributors",
+    "standard-version": "standard-version",
     "release:patch": "standard-version release --release-as patch",
     "release:minor": "standard-version release --release-as minor",
     "release:major": "standard-version release --release-as major",
@@ -29,13 +31,13 @@
   "author": "Stewan Silva",
   "license": "MIT",
   "peerDependencies": {
-    "@capacitor/core": "^4.0.0"
+    "@capacitor/core": "^5.0.0"
   },
   "devDependencies": {
-    "@capacitor/android": "^4.0.0",
-    "@capacitor/core": "^4.0.0",
+    "@capacitor/android": "^5.0.0",
+    "@capacitor/core": "^5.0.0",
     "@capacitor/docgen": "^0.0.10",
-    "@capacitor/ios": "^4.0.0",
+    "@capacitor/ios": "^5.0.0",
     "@ionic/eslint-config": "^0.3.0",
     "@ionic/prettier-config": "^1.0.1",
     "@ionic/swiftlint-config": "^1.1.2",
@@ -45,6 +47,7 @@
     "prettier-plugin-java": "~1.0.2",
     "rimraf": "^3.0.2",
     "rollup": "^2.32.0",
+    "standard-version": "^9.5.0",
     "swiftlint": "^1.0.1",
     "typescript": "~4.1.5"
   },

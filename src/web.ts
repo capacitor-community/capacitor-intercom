@@ -13,6 +13,11 @@ export class IntercomWeb extends WebPlugin implements IntercomPlugin {
     throw this.unimplemented('Not implemented on web.');
   }
 
+  async loadWithKeys(options: { appId?: string; apiKeyIOS?: string; apiKeyAndroid?: string; }) {
+    options;
+    throw this.unimplemented('Not implemented on web.');
+  }
+
   async registerUnidentifiedUser() {
     throw this.unimplemented('Not implemented on web.');
   }
@@ -85,6 +90,11 @@ export class IntercomWeb extends WebPlugin implements IntercomPlugin {
   }
 
   sendPushTokenToIntercom(options: { value: string }): Promise<void> {
+    options;
+    throw this.unimplemented('Not implemented on web.');
+  }
+
+  async displayArticle(options: { articleId: string; }): Promise<void> {
     options;
     throw this.unimplemented('Not implemented on web.');
   }

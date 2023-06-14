@@ -10,6 +10,8 @@ import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
 import com.getcapacitor.annotation.Permission;
 
+import org.json.JSONException;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -34,6 +36,17 @@ public class IntercomPlugin extends Plugin {
         // load parent
         super.load();
     }
+    
+    @PluginMethod()
+    public void loadWithKeys(PluginCall call) {
+        String appId = call.getString("appId", "NO_APP_ID_PASSED");
+        String apiKey = call.getString("apiKeyAndroid", "NO_API_KEY_PASSED");
+
+        Intercom.initialize(this.getActivity().getApplication(), apiKey, appId);
+     
+        // load parent
+        super.load();
+    }
 
     @Override
     public void handleOnStart() {
@@ -51,7 +64,7 @@ public class IntercomPlugin extends Plugin {
     @PluginMethod
     public void registerIdentifiedUser(PluginCall call) {
         String email = call.getString("email");
-        String userId = call.getString("userId");
+        String userId = call.getData().getString("userId");
 
         Registration registration = new Registration();
 
@@ -216,6 +229,13 @@ public class IntercomPlugin extends Plugin {
         } catch (Exception e) {
             call.reject("Failed to handle received Intercom push", e);
         }
+    }
+
+    @PluginMethod
+    public void displayArticle(PluginCall call) {
+        String articleId = call.getString("articleId");
+        Intercom.client().displayArticle(articleId);
+        call.resolve();
     }
 
     private void setUpIntercom() {
