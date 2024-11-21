@@ -4,7 +4,6 @@
 // Define the plugin using the CAP_PLUGIN Macro, and
 // each method the plugin supports using the CAP_PLUGIN_METHOD macro.
 CAP_PLUGIN(IntercomPlugin, "Intercom",
-           CAP_PLUGIN_METHOD(loadWithKeys, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(registerIdentifiedUser, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(registerUnidentifiedUser, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(updateUser, CAPPluginReturnPromise);
@@ -22,4 +21,7 @@ CAP_PLUGIN(IntercomPlugin, "Intercom",
            CAP_PLUGIN_METHOD(setUserHash, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(setBottomPadding, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(displayArticle, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(getUnreadConversationCount, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(addUnreadConversationCountListener, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(getChatOpenedStatus, CAPPluginReturnPromise);
 )
