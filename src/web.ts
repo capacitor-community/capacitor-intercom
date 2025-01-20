@@ -1,10 +1,6 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type {
-  IntercomPlugin,
-  IntercomPushNotificationData,
-  IntercomUserUpdateOptions,
-} from './definitions';
+import type { IntercomPlugin, IntercomPushNotificationData, IntercomUserUpdateOptions } from './definitions';
 
 export class IntercomWeb extends WebPlugin implements IntercomPlugin {
   constructor() {
@@ -14,19 +10,12 @@ export class IntercomWeb extends WebPlugin implements IntercomPlugin {
     });
   }
 
-  async registerIdentifiedUser(options: {
-    userId?: string;
-    email?: string;
-  }): Promise<void> {
+  async registerIdentifiedUser(options: { userId?: string; email?: string }): Promise<void> {
     options;
     throw this.unimplemented('Not implemented on web.');
   }
 
-  async loadWithKeys(options: {
-    appId?: string;
-    apiKeyIOS?: string;
-    apiKeyAndroid?: string;
-  }): Promise<void> {
+  async loadWithKeys(options: { appId?: string; apiKeyIOS?: string; apiKeyAndroid?: string }): Promise<void> {
     options;
     throw this.unimplemented('Not implemented on web.');
   }

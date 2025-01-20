@@ -21,7 +21,8 @@ public class IntercomPlugin: CAPPlugin {
 
         NotificationCenter.default.addObserver(self, selector: #selector(self.didRegisterWithToken(notification:)), name: Notification.Name.capacitorDidRegisterForRemoteNotifications, object: nil)
 
-        observers.append(NotificationCenter.default.addObserver(forName: .IntercomWindowDidShow, object: nil, queue: OperationQueue.main) { [weak self] (_) in
+        observers.append(
+            NotificationCenter.default.addObserver(forName: .IntercomWindowDidShow, object: nil, queue: OperationQueue.main) { [weak self] (_) in
             self?.notifyListeners("windowDidShow", data: nil)
         })
 
